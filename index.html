@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm của em</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <h1 class="form-title">BẢNG ĐIỂM CỦA EM</h1>
+        <div class="label1">
+            <label for="">Semester 1: </label>
+            <input id="semester1" type="number">
+        </div>
+        <br>
+        <div class="label2">
+            <label for="">Semester 2: </label>
+            <input id="semester2" type="number">
+        </div>
+        <br>
+        <div class="label3">
+            <label class="year_label" for="">Year: </label>
+            <select class="year_select" name="" id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <br>
+        <div class="label4">
+            <label for="">Summarise: </label>
+            <input id="average" type="number">
+        </div>
+
+        <div class="label5">
+            <p id="result"></p>
+        </div>
+
+        <div class="btn">
+            <button class="btn_ok" id="ok" onclick="showResult()">OK</button>
+            <button class="btn_reset" id="cancer" onclick="resetInput()">Cancer</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

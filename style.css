@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form {
+    width: 500px;
+    height: 300px;
+    background-color: #ccc;
+    padding: 16px;
+    border: 1px solid red;
+    text-align: left;
+}
+
+#semester1, #semester2, #average {
+    width: 82%;
+}
+
+.form-title {
+    color: blue;
+}
+
+.year_label {
+    padding-left: 42px;
+}
+
+.year_select {
+    color: red;
+}
+
+.label5 {
+    padding-top: 16px;
+}
+
+.btn {
+    padding: 16px;
+    text-align: center;
+
+}
+
+.btn_ok, .btn_reset {
+    width: 70px;
+    height: 36px;
+}
