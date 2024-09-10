@@ -4,7 +4,6 @@ function showResult(){
     var year = document.getElementById("year");
     var semesterYear = parseInt(year.options[year.selectedIndex].value);
 
-
     var average;
     if(semesterYear == 1){
         average = (semester1Score + semester2Score)/2;
@@ -16,9 +15,11 @@ function showResult(){
         average = (semester1Score + (semester2Score * 3)) /4;
         document.getElementById('average').value = average;
     }
+
     var result;
-    document.getElementById('result').style.color = "red"
-    document.getElementById('result').style.fontSize = "32px"
+    document.getElementById('result').style.color = "red";
+    document.getElementById('result').style.fontSize = "32px";
+
     if (average > 9) {
         result = "Học sinh xuất sắc";
     }else if(average >= 8) {
