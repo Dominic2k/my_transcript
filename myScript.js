@@ -17,20 +17,23 @@ function showResult(){
     }
 
     var result;
-    document.getElementById('result').style.color = "red";
+    var setColor = document.getElementById('result');
     document.getElementById('result').style.fontSize = "32px";
 
     if (average > 9) {
         result = "Học sinh xuất sắc";
+        setColor.style.color = "green";
     }else if(average >= 8) {
         result = "Học sinh giỏi";
+        setColor.style.color = "orange";
     }else if (average >= 5) {
         result = "Học sinh khá";
+        setColor.style.color = "yellow";
     }else{
         result = "Học sinh yếu";
+        setColor.style.color = "red";
     }
     document.getElementById('result').innerHTML = result;
-
 }
 
 function resetInput() {
